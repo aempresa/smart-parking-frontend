@@ -6,6 +6,7 @@ import Layouts from 'vite-plugin-vue-layouts'
 import Vue from '@vitejs/plugin-vue'
 import VueRouter from 'unplugin-vue-router/vite'
 import Vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
+import { VitePWA } from 'vite-plugin-pwa'
 
 // Utilities
 import { defineConfig } from 'vite'
@@ -37,7 +38,40 @@ export default defineConfig({
     Vue({
       template: { transformAssetUrls },
     }),
-    // https://github.com/vuetifyjs/vuetify-loader/tree/master/packages/vite-plugin#readme
+    VitePWA({
+      registerType: 'autoUpdate',
+      includeAssets: ['favicon.svg', 'apple-touch-icon.png', 'masked-icon.svg'],
+      manifest: {
+        name: 'Smart Parking',
+        short_name: 'SmartParking',
+        description: 'Smart Parking: A facilidade e agilidade que você precisa para reservar sua vaga.',
+        theme_color: '#ffffff',
+        icons: [
+          {
+            src: 'pwa-192x192.png',
+            sizes: '192x192',
+            type: 'image/png',
+            purpose: 'any',
+          },
+          {
+            src: 'pwa-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: 'maskable',
+          },
+        ],
+        id: 'com.smart-parking.app',
+        orientation: 'any',
+        background_color: '#ffffff',
+        start_url: '.',
+        launch_handler: {
+          client_mode: ['navigate-existing', 'auto'],
+        },
+      },
+      devOptions: {
+        enabled: true,
+      },
+    }),
     Vuetify({
       autoImport: true,
       styles: {
