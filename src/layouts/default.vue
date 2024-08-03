@@ -1,10 +1,8 @@
 <script lang="ts" setup>
+  import { useLayout } from '@/composables/layout'
+  const { layout } = useLayout()
 </script>
 
 <template>
-  <v-app>
-    <v-main>
-      <router-view />
-    </v-main>
-  </v-app>
+  <component :is="layout" />
 </template>
