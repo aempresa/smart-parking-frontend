@@ -14,7 +14,7 @@
       <v-img src="/logo.png" style="width: 40px; height: 40px" />
     </v-avatar>
 
-    <v-list class="d-flex align-center ga-2">
+    <v-list class="d-flex align-center ga-4">
       <v-list-item
         v-for="link in appStore.state.navLinks"
         :key="link.name"
@@ -26,6 +26,6 @@
       </v-list-item>
     </v-list>
 
-    <v-btn class="position-absolute right-0 mx-4 text-h6 text-uppercase px-10" color="primary"> Entrar </v-btn>
+    <v-btn class="position-absolute right-0 mx-4 text-h5 text-uppercase px-10" color="primary"> Entrar </v-btn>
   </header>
 </template>
