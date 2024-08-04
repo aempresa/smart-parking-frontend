@@ -2,7 +2,7 @@
 
 <template>
   <v-main class="h-100 d-flex align-center justify-center bg-grey-lighten-4">
-    <v-sheet class="rounded-xl" width="22%">
+    <v-sheet class="rounded-xl" style="min-width: 330px;" width="22%">
       <v-form class="w-100 d-flex flex-column align-center px-6 py-16 ga-6">
         <div class="d-flex flex-column w-100 align-center ga-4">
           <v-img src="/logo.png" width="80" />
