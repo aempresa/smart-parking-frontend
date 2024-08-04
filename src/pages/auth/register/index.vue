@@ -55,16 +55,16 @@
 
         <div class="w-100 d-flex flex-column ga-4">
           <div class="w-100 d-flex justify-space-between">
-            <v-btn color="grey-lighten-1" style="width: 45%" variant="outlined">
+            <v-btn color="grey-lighten-1" rounded="lg" style="width: 45%" variant="outlined">
               <v-icon color="black" size="25"> mdi-google </v-icon>
             </v-btn>
 
-            <v-btn color="grey-lighten-1" style="width: 45%" variant="outlined">
+            <v-btn color="grey-lighten-1" rounded="lg" style="width: 45%" variant="outlined">
               <v-icon color="black" size="25"> mdi-apple </v-icon>
             </v-btn>
           </div>
 
-          <v-btn class="w-100" color="primary" variant="flat">
+          <v-btn class="w-100" color="primary" rounded="lg" variant="flat">
             <p class="text-h5 text-uppercase font-weight-bold">Registre-se</p>
           </v-btn>
         </div>
