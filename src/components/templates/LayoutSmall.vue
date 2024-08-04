@@ -5,7 +5,6 @@
 <template>
   <v-app>
     <v-main>
-      LayoutSmall
       <router-view />
     </v-main>
   </v-app>
