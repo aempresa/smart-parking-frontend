@@ -7,10 +7,12 @@ export const useLayout = () => {
     const width = window.innerWidth
     if (width < 768) {
       layout.value = defineAsyncComponent(() =>
+        // @ts-ignore
         import('@/components/templates/LayoutSmall.vue'),
       )
     } else {
       layout.value = defineAsyncComponent(() =>
+        // @ts-ignore
         import('@/components/templates/LayoutLarge.vue'),
       )
     }

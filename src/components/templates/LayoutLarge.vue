@@ -4,8 +4,8 @@
 
 <template>
   <v-app>
+    <header-large />
     <v-main>
-      LayoutLarge
       <router-view />
     </v-main>
   </v-app>
