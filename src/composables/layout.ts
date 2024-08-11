@@ -1,5 +1,5 @@
 import { defineAsyncComponent, onMounted, onUnmounted, shallowRef } from 'vue'
-import { ILayoutComposable } from '@/interfaces/layout'
+import { ILayoutComposable } from '@/composables/interfaces/layout'
 
 export const useLayout = (): ILayoutComposable => {
   const layout = shallowRef()

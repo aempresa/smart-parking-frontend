@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-  import { IAppStore } from '@/interfaces/app'
+  import { IAppStore } from '@/composables/interfaces/app'
   import { useAppStore } from '@/stores/app'
 
   const appStore: IAppStore = useAppStore()
@@ -7,7 +7,7 @@
 
 <template>
   <header
-    class="w-100 position-relative d-flex align-center justify-center border-b-sm"
+    class="w-100 position-relative d-flex align-center justify-center border-b-sm bg-white"
     style="height: 60px"
   >
     <v-avatar class="position-absolute left-0 mx-4" size="50">
@@ -26,6 +26,6 @@
       </v-list-item>
     </v-list>
 
-    <v-btn class="position-absolute right-0 mx-4 text-h5 text-uppercase px-10" color="primary"> Entrar </v-btn>
+    <v-btn class="cursor-pointer position-absolute right-0 mx-4 text-h5 text-uppercase px-10" color="primary"> Entrar </v-btn>
   </header>
 </template>

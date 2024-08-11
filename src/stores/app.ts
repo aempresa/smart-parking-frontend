@@ -10,7 +10,9 @@ export const useAppStore = defineStore<'app', IAppStore>('app', () => {
     ],
   }
 
+  const stateApp = computed(() => {return {...state}})
+
   return {
-    state,
+    stateApp,
   }
 })

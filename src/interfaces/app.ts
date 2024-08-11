@@ -5,5 +5,5 @@ export interface IAppStoreState {
 }
 
 export interface IAppStore {
-  state: IAppStoreState
+  stateApp: ComputedRef<IAppStoreState>,
 }
