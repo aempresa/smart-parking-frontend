@@ -14,12 +14,12 @@ const showMenu = ref(false);
     <v-icon class="cursor-pointer" size="25" @click.stop="showMenu = !showMenu">
       mdi-menu
     </v-icon>
-    <v-avatar size="40">
+    <v-avatar class="mx-4" size="40">
       <v-img src="/logo.png" style="width: 30px; height: 30px" />
     </v-avatar>
 
     <v-btn
-      class="cursor-pointer position-absolute right-0 mx-4 text-h6 text-uppercase px-7 bg-primary text-white"
+      class="cursor-pointer position-absolute right-0 text-h6 text-uppercase px-7 bg-primary text-white"
       color="white"
       density="compact"
     >
