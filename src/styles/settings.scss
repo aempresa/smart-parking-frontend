@@ -21,3 +21,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.v-text-field .v-input__details {
+  padding-inline: 0px;
+  padding: 0;
+}
