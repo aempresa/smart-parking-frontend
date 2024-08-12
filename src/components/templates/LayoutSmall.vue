@@ -1,11 +1,9 @@
-<script lang="ts">
-
-</script>
+<script lang="ts"></script>
 
 <template>
   <v-app>
-    <v-main>
-      <router-view />
-    </v-main>
+    <header-small />
+
+    <router-view />
   </v-app>
 </template>

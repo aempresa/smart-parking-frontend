@@ -4,6 +4,7 @@
 
 <template>
   <v-app>
+    <header-large />
     <v-main>
       <router-view />
     </v-main>
