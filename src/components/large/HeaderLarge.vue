@@ -1,8 +1,7 @@
 <script lang="ts" setup>
-  import { IAppStore } from '@/composables/interfaces/app'
   import { useAppStore } from '@/stores/app'
 
-  const appStore: IAppStore = useAppStore()
+  const appStore = useAppStore()
 </script>
 
 <template>
@@ -16,7 +15,7 @@
 
     <v-list class="d-flex align-center ga-4">
       <v-list-item
-        v-for="link in appStore.state.navLinks"
+        v-for="link in appStore.stateApp.navLinks"
         :key="link.name"
         class="py-0 text-h5 text-uppercase rounded"
         density="compact"
