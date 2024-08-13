@@ -1,6 +1,11 @@
 <script lang="ts" setup></script>
 
 <template>
+  <router-link to="/">
+    <v-icon class="position-absolute top-0 left-0 ma-2 cursor-pointer" size="20">
+      mdi-arrow-left
+    </v-icon>
+  </router-link>
   <v-main class="h-100 d-flex align-center justify-center bg-grey-lighten-4">
     <v-sheet class="rounded-xl" height="70vh" style="min-width: 330px; min-height: 600px" width="22%">
       <v-form class="w-100 h-100 d-flex flex-column align-center justify-center px-6 ga-6">

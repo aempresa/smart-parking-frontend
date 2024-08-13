@@ -22,6 +22,7 @@ const showMenu = ref(false);
       class="cursor-pointer position-absolute right-0 text-h6 text-uppercase px-7 bg-primary text-white"
       color="white"
       density="compact"
+      to="/auth/login"
     >
       Entrar
     </v-btn>

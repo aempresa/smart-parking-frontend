@@ -25,6 +25,6 @@
       </v-list-item>
     </v-list>
 
-    <v-btn class="cursor-pointer position-absolute right-0 mx-4 text-h5 text-uppercase px-10" color="primary"> Entrar </v-btn>
+    <v-btn class="cursor-pointer position-absolute right-0 mx-4 text-h5 text-uppercase px-10" color="primary" to="/auth/login"> Entrar </v-btn>
   </header>
 </template>
