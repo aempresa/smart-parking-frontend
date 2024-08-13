@@ -15,10 +15,12 @@ import { fileURLToPath, URL } from 'node:url'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    VueRouter({
-      dts: 'src/typed-router.d.ts',
+    VueRouter(),
+    Layouts({
+      layoutsDirs: 'src/layouts',
+      pagesDirs: 'src/pages',
+      defaultLayout: 'default'
     }),
-    Layouts(),
     AutoImport({
       imports: [
         'vue',

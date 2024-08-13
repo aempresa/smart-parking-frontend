@@ -1,5 +1,5 @@
 import { defineAsyncComponent, onMounted, onUnmounted, shallowRef } from 'vue'
-import { ILayoutComposable } from '@/composables/interfaces/layout'
+import { ILayoutComposable } from '@/interfaces/layout'
 
 export const useLayout = (): ILayoutComposable => {
   const layout = shallowRef()
@@ -10,20 +10,20 @@ export const useLayout = (): ILayoutComposable => {
     if (width < 768) {
       layout.value = defineAsyncComponent(() =>
         // @ts-ignore
-        import('@/components/templates/LayoutSmall.vue'),
+        import('@/components/layouts/LayoutSmall.vue'),
       )
       bannerHome.value = defineAsyncComponent(() =>
         // @ts-ignore
-        import('@/components/small/home/BannerHomeSmall.vue'),
+        import('@/components/templates/small/home/BannerHomeSmall.vue'),
       )
     } else {
       layout.value = defineAsyncComponent(() =>
         // @ts-ignore
-        import('@/components/templates/LayoutLarge.vue'),
+        import('@/components/layouts/LayoutLarge.vue'),
       )
       bannerHome.value = defineAsyncComponent(() =>
         // @ts-ignore
-        import('@/components/large/home/BannerHomeLarge.vue'),
+        import('@/components/templates/large/home/BannerHomeLarge.vue'),
       )
     }
   }
