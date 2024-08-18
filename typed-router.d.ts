@@ -22,5 +22,6 @@ declare module 'vue-router/auto-routes' {
     '/auth/': RouteRecordInfo<'/auth/', '/auth', Record<never, never>, Record<never, never>>,
     '/auth/login/': RouteRecordInfo<'/auth/login/', '/auth/login', Record<never, never>, Record<never, never>>,
     '/auth/register/': RouteRecordInfo<'/auth/register/', '/auth/register', Record<never, never>, Record<never, never>>,
+    '/auth/user-type/': RouteRecordInfo<'/auth/user-type/', '/auth/user-type', Record<never, never>, Record<never, never>>,
   }
 }

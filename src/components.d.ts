@@ -18,5 +18,8 @@ declare module 'vue' {
     NearbyParkingSection: typeof import('./components/home/NearbyParkingSection.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    UserTypeCard: typeof import('./components/auth/userType/userTypeCard/UserTypeCard.vue')['default']
+    UserTypeCardDesktop: typeof import('./components/auth/userType/userTypeCard/desktop/UserTypeCardDesktop.vue')['default']
+    UserTypeCardMobile: typeof import('./components/auth/userType/userTypeCard/mobile/UserTypeCardMobile.vue')['default']
   }
 }
