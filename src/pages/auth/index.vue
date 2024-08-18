@@ -8,5 +8,5 @@
 
 <route lang="yaml">
 meta:
-  layout: auth
+  layout: blank
 </route>

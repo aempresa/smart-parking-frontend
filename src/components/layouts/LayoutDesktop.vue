@@ -1,6 +1,6 @@
 <script lang="ts"></script>
 
 <template>
-  <header-large />
+  <header-desktop />
   <router-view />
 </template>

@@ -1,7 +1,6 @@
 <script lang="ts"></script>
 
 <template>
-  <header-small />
-
+  <header-mobile />
   <router-view />
 </template>

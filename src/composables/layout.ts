@@ -3,27 +3,21 @@ import { ILayoutComposable } from '@/interfaces/layout'
 
 export const useLayout = (): ILayoutComposable => {
   const layout = shallowRef()
-  const bannerHome = shallowRef()
+  const isMobile = ref(false)
 
   const updateLayout = () => {
     const width = window.innerWidth
+    isMobile.value = width < 768
+    console.log(isMobile.value)
     if (width < 768) {
       layout.value = defineAsyncComponent(() =>
         // @ts-ignore
-        import('@/components/layouts/LayoutSmall.vue'),
-      )
-      bannerHome.value = defineAsyncComponent(() =>
-        // @ts-ignore
-        import('@/components/templates/small/home/BannerHomeSmall.vue'),
+        import('@/components/layouts/LayoutMobile.vue'),
       )
     } else {
       layout.value = defineAsyncComponent(() =>
         // @ts-ignore
-        import('@/components/layouts/LayoutLarge.vue'),
-      )
-      bannerHome.value = defineAsyncComponent(() =>
-        // @ts-ignore
-        import('@/components/templates/large/home/BannerHomeLarge.vue'),
+        import('@/components/layouts/LayoutDesktop.vue'),
       )
     }
   }
@@ -37,5 +31,5 @@ export const useLayout = (): ILayoutComposable => {
     window.removeEventListener('resize', updateLayout)
   })
 
-  return { layout, bannerHome }
+  return { layout, isMobile }
 }

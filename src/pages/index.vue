@@ -1,11 +1,14 @@
 <script lang="ts" setup>
-  import { useLayout } from '@/composables/layout'
-  const { bannerHome } = useLayout()
 </script>
 
 <template>
   <v-main class="d-flex flex-column ga-5 py-0">
-    <component :is="bannerHome" />
+    <banner-home />
     <nearby-parking-section />
   </v-main>
 </template>
+
+<route lang="yaml">
+  meta:
+    layout: default
+  </route>

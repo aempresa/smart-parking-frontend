@@ -7,13 +7,13 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
-    BannerHomeLarge: typeof import('./components/templates/large/home/BannerHomeLarge.vue')['default']
-    BannerHomeSmall: typeof import('./components/templates/small/home/BannerHomeSmall.vue')['default']
-    HeaderLarge: typeof import('./components/templates/large/HeaderLarge.vue')['default']
-    HeaderSmall: typeof import('./components/templates/small/HeaderSmall.vue')['default']
-    LayoutLarge: typeof import('./components/layouts/LayoutLarge.vue')['default']
-    LayoutSmall: typeof import('./components/layouts/LayoutSmall.vue')['default']
-    MenuSmall: typeof import('./components/small/MenuSmall.vue')['default']
+    BannerHome: typeof import('./components/home/banner/BannerHome.vue')['default']
+    BannerHomeDesktop: typeof import('./components/home/banner/desktop/BannerHomeDesktop.vue')['default']
+    BannerHomeMobile: typeof import('./components/home/banner/mobile/BannerHomeMobile.vue')['default']
+    HeaderDesktop: typeof import('./components/global/header/HeaderDesktop.vue')['default']
+    HeaderMobile: typeof import('./components/global/header/HeaderMobile.vue')['default']
+    LayoutDesktop: typeof import('./components/layouts/LayoutDesktop.vue')['default']
+    LayoutMobile: typeof import('./components/layouts/LayoutMobile.vue')['default']
     NearbyParking: typeof import('./components/global/card/NearbyParking.vue')['default']
     NearbyParkingSection: typeof import('./components/home/NearbyParkingSection.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
