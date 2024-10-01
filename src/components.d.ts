@@ -7,7 +7,15 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
-    HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    BannerHome: typeof import('./components/home/banner/BannerHome.vue')['default']
+    BannerHomeDesktop: typeof import('./components/home/banner/desktop/BannerHomeDesktop.vue')['default']
+    BannerHomeMobile: typeof import('./components/home/banner/mobile/BannerHomeMobile.vue')['default']
+    HeaderDesktop: typeof import('./components/global/header/HeaderDesktop.vue')['default']
+    HeaderMobile: typeof import('./components/global/header/HeaderMobile.vue')['default']
+    LayoutDesktop: typeof import('./components/layouts/LayoutDesktop.vue')['default']
+    LayoutMobile: typeof import('./components/layouts/LayoutMobile.vue')['default']
+    NearbyParking: typeof import('./components/global/card/NearbyParking.vue')['default']
+    NearbyParkingSection: typeof import('./components/home/NearbyParkingSection.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }
